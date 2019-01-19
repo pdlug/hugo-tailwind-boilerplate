@@ -1,0 +1,30 @@
+{
+  "name": "hugo-tailwind-boilerplate",
+  "version": "1.0.0",
+  "description": "Hugo + Tailwind CSS",
+  "main": "index.js",
+  "scripts": {
+    "hugo": "hugo",
+    "server": "hugo server --buildDrafts --buildFuture",
+    "build": "npm run webpack && npm run hugo",
+    "webpack": "webpack --run-prod --require @babel/register",
+    "webpack:dev": "webpack --run-dev --require @babel/register",
+    "webpack:watch": "webpack --run-dev --watch --require @babel/register"
+  },
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "@babel/core": "^7.2.2",
+    "@babel/plugin-transform-strict-mode": "^7.2.0",
+    "@babel/preset-env": "^7.2.3",
+    "@babel/register": "^7.0.0",
+    "@fullhuman/postcss-purgecss": "^1.1.0",
+    "babel-loader": "^8.0.5",
+    "postcss-cli": "^6.1.1",
+    "postcss-preset-env": "^6.5.0",
+    "tailwindcss": "^0.7.3",
+    "webpack": "^4.28.4",
+    "webpack-command": "^0.4.2"
+  },
+  "dependencies": {}
+}

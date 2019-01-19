@@ -1,0 +1,15 @@
+baseURL = "/"
+languageCode = "en-us"
+title = "Hugo + Tailwind CSS Boilerplate"
+canonifyurls = true
+relativeURLs = true
+
+[[menu.sidebar]]
+name = "Home"
+url = "/"
+weight = 1
+
+[[menu.sidebar]]
+name = "Articles"
+url = "/articles"
+weight = 2

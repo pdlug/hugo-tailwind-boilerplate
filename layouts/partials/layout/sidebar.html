@@ -1,0 +1,5 @@
+<nav class="pt-8">
+  {{ range .Site.Menus.sidebar }}
+    <a class="p-2 text-lg block text-white no-underline" href="{{ .URL }}">{{ .Name }}</a>
+  {{ end }}
+</nav>

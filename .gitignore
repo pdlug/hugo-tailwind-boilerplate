@@ -1,0 +1,5 @@
+node_modules/
+public
+resources/_gen
+package-lock.js
+static/javascripts/app.js

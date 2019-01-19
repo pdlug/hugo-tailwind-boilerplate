@@ -1,0 +1,25 @@
+@tailwind preflight;
+@tailwind components;
+@tailwind utilities;
+
+.article {
+  & h1, & h2, & h3, & h4, & h5, & h6 {
+    @apply text-grey-darkest mb-2;
+  }
+
+  & p {
+    @apply leading-normal mb-6;
+  }
+
+  & ul {
+    @apply leading-normal mb-6;
+  }
+
+  & blockquote {
+    @apply border-l-2 border-blue-dark bg-grey-lighter p-3;
+
+    & p {
+      @apply mb-0;
+    }
+  }
+}

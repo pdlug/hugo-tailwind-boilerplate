@@ -1,0 +1,19 @@
+<div class="mb-2">
+  <div class="flex justify-between items-center shadow px-2 pb-1">
+    <h1 class="inline-block leading-none align-middle">
+      <a class="align-middle text-black no-underline text-xl" href="/">
+        {{ .Site.Title }}
+      </a>
+    </h1>
+    <a class="no-underline mt-3" id="mobile-menu-toggle" href="#" title="Menu">
+      <svg height="32" viewBox="0 0 32 32" width="32" xmlns="http://www.w3.org/2000/svg">
+        <path d="M4 10h24c1.104 0 2-.896 2-2s-.896-2-2-2H4c-1.104 0-2 .896-2 2s.896 2 2 2zm24 4H4c-1.104 0-2 .896-2 2s.896 2 2 2h24c1.104 0 2-.896 2-2s-.896-2-2-2zm0 8H4c-1.104 0-2 .896-2 2s.896 2 2 2h24c1.104 0 2-.896 2-2s-.896-2-2-2z"/>
+      </svg>
+    </a>
+  </div>
+  <div id="mobile-menu" class="hidden mb-4">
+    {{ range .Site.Menus.sidebar }}
+      <a class="p-2 text-lg text-blue block no-underline border-b" href="{{ .URL }}">{{ .Name }}</a>
+    {{ end }}
+  </div>
+</div>

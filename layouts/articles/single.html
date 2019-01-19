@@ -1,0 +1,13 @@
+{{ define "main" }}
+  <div class="mt-6">
+    <h1 class="leading-tight">{{ .Title }}</h1>
+    
+    <div class="text-grey-darker text- mb-2 leading-tight">
+      {{ .Date.Format "January 2, 2006" }}
+    </div>
+
+    <div class="article">
+      {{.Content}}
+    </div>
+  </div>
+{{ end}}
